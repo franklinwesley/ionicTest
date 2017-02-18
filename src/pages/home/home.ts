@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
-import { ModalAddTaskPage } from './modal/modal-addTask';
 
 @Component({
   selector: 'page-home',
@@ -8,12 +6,7 @@ import { ModalAddTaskPage } from './modal/modal-addTask';
 })
 export class HomePage {
 
-  constructor(public modalCtrl: ModalController) {
+  constructor() {
 
-  }
-
-  openModal() {
-    let modal = this.modalCtrl.create(ModalAddTaskPage);
-    modal.present();
   }
 }

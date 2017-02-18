@@ -3,12 +3,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ModalAddTaskPage } from '../pages/home/modal/modal-addTask';
+import { NoticePage } from '../pages/notice/notice';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ModalAddTaskPage
+    ModalAddTaskPage,
+    NoticePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +19,8 @@ import { ModalAddTaskPage } from '../pages/home/modal/modal-addTask';
   entryComponents: [
     MyApp,
     HomePage,
-    ModalAddTaskPage
+    ModalAddTaskPage,
+    NoticePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

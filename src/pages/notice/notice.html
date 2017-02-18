@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notices</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-card ion-item *ngFor="let notice of notices">
+      <ion-card-header>
+        {{notice.title}}
+      </ion-card-header>
+      <ion-card-content>
+        {{notice.message}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
